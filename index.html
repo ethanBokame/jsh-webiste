@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="programming-code-signs.png" type="image/x-icon">
+    <title>JsH-documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #34383d;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            align-items: baseline;
+        }
+
+        body p {
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #2b2b2b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav h1 {
+            font-size: 30px;
+        }
+
+        nav a img {
+            width: 30px;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 0 100px;
+            text-shadow: 3px 2px 3px #000;
+        }
+
+        @media screen and (max-width: 825px) {
+            body {
+                gap: 45px;
+            }
+            .intro {
+                padding: 0 10px;
+            }
+        }
+
+        .download-container {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 2px solid #fff;
+            box-shadow: 3px 2px 3px #000;
+            transition: 0.2s;
+            border-radius: 20px;
+            padding: 20px 50px;
+            gap: 10px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        .download-container a {
+            text-decoration: none;
+            color: #34383d;
+            font-weight: 750;
+            font-size: 20px;
+
+        }
+
+        .download-container img {
+            width: 30px;
+        }
+
+        .bugs {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-left: 40px;
+            cursor: pointer;
+        }
+        .bugs img {
+            width: 16px;
+        }
+
+        .bugs p {
+            text-decoration: underline;
+        }
+
+        .bug-content-container {
+            margin-top: -50px;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width: 825px) {
+            .bug-content-container {
+                margin-top: -30px;
+            }
+        }
+
+        .bug-content {
+            width: 450px;
+            padding-left: 40px;
+            height: 0;
+        }
+
+        .bug-content img {
+            width: 100%;
+        }
+
+        .bug-content p {
+            padding-bottom: 40px;
+        }
+
+        @media screen and (max-width: 550px) {
+            .bug-content {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 40px;
+            }
+        }
+
+        footer {
+            background-color: #2b2b2b;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+
+        footer a {
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 500px;
+            margin: 0 auto;
+            align-items: baseline;
+        }
+
+        form input[type="email"] {
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid white;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 2px solid white;
+            cursor: pointer;
+            margin-left: auto;
+            font-weight: 750;
+            color: #34383d;
+            background-color: white;
+            transition: 0.2s;
+        }
+
+        form input[type="submit"]:hover {
+            color: white;
+            transition: 0.2s;
+            background-color: #34383d;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 160px;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 555px){
+            form {
+                width: 100%;
+                padding: 0 40px;
+                box-sizing: border-box;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>
+            JsH
+        </h1>
+
+        <a href="https://github.com/thedevethan/JsH" target="_blank">
+            <img src="github.png" alt="">
+        </a>
+    </nav>
+
+    <h1 class="intro">
+        Explorez notre application conçue spécialement pour les débutants en programmation. Téléchargez-la dès maintenant et commencez votre aventure!
+    </h1>
+
+    <div class="download-container">
+        <img src="silhouette-de-logo-windows (1).png" alt="">
+        <a href="https://www.dropbox.com/scl/fi/gwhjkcakvivv6m2yxszzp/jsh_setup.exe?rlkey=aykwbbo4trezffchdnpd0uo3g&st=2phpx6tr&dl=1">
+            Télécharger
+        </a>
+    </div>
+
+    <div class="bugs">
+        <p>
+            Bugs potentiels
+        </p>
+        <img src="chevron.png" alt="">
+    </div>
+
+    <div class="bug-content-container">
+        <div class="bug-content">
+            <p>
+                La technologie utilisée pour concevoir l'application génère des faux positifs (les antivirus envoient des alertes malgré l'absence de virus).
+            </p>
+            <img src="L1d85mCF02.png" alt="">
+            <p>
+                (1) Dans un premier temps, Windows vous enverra un message de ce type.
+            </p>
+            <img src="idUejHHSMb.png" alt="">
+            <p>
+                (2) Cliquez sur "informations complémentaires".
+            </p>
+            <img src="hvlqMXoryg.png" alt="">
+            <p>
+                (3) Cliquez sur "exécuter quand même".
+            </p>
+            
+        </div>
+    </div>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="4fc53e73-c4eb-4def-99a1-a0b26c9c0ad7">
+        <p>
+            Une question ou un commentaire ?
+        </p>
+
+        <input type="email" name="email" required placeholder="Adresse email">
+        <textarea name="message" required placeholder="Entrez votre message..."></textarea>
+        <input type="submit" value="Envoyer">
+    </form>
+
+    <footer>
+        <p>© 2024 JsH. Tous droits réservés. Créé par <a href="https://www.linkedin.com/in/ethan-bokamé-0b59a430b">Ethan Bokamé</a><br><br>
+            <b>shinzou wo sasageyo!</b>
+        </p>
+    </footer>
+
+
+
+    <script>
+        const d_btn = document.querySelector('.download-container');
+
+        d_btn.addEventListener('click', function(){
+            document.querySelector('.download-container a').click();
+        })
+
+        d_btn.addEventListener('mouseover', function () {
+            d_btn.style.backgroundColor = '#34383d';
+            document.querySelector('.download-container a').style.color = 'white';
+            document.querySelector('.download-container img').setAttribute("src", "silhouette-de-logo-windows.png")
+        })
+
+        d_btn.addEventListener('mouseout', function () {
+            d_btn.style.backgroundColor = 'white';
+            document.querySelector('.download-container a').style.color = '#34383d';
+            document.querySelector('.download-container img').setAttribute("src", "silhouette-de-logo-windows (1).png")
+        })
+
+        
+
+        document.querySelector('.bugs').addEventListener("click", function () {
+            const chevron = document.querySelector('.bugs img').getAttribute("src");
+
+            if (chevron == "chevron.png") {
+                document.querySelector('.bugs img').setAttribute("src", "chevron (1).png");
+                document.querySelector('.bug-content').style.height = "100%";
+            }
+            else {
+                document.querySelector('.bugs img').setAttribute("src", "chevron.png");
+                document.querySelector('.bug-content').style.height = "0";
+            }
+        })
+    </script>
+</body>
+</html>
